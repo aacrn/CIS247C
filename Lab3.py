@@ -29,11 +29,8 @@ def is_valid_triangle():
     if (angle_1 + angle_2 + angle_3) != 180:
         print("Not a valid triangle, angles do not add to 180")
         return False
-    elif (angle_1 or angle_2 or angle_3 < 0):
+    elif (angle_1 or angle_2 or angle_3 <= 0):
         print("Not a valid triangle, angles must be positive")
-        return False
-    elif (angle_1 or angle_2 or angle_3 >= 180):
-        print("Not a valid triangle, angle must be less than 180")
         return False
     else: 
         get_triangle_type(angle_1, angle_2, angle_3)
