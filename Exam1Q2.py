@@ -26,15 +26,12 @@ def main():
         coin_result = flip_coin()
         if user_choice == coin_result:
             correct_count += 1
-            results.append((i + 1, 'Y'))
+            results.append('Y')
         else:
-            results.append((i + 1, 'N'))
-    print("\n+-------+--------+")
-    print("| Throw | Correct|")
-    print("+-------+--------+")
-    for throw, correct in results:
-        print(f"| {throw:<5} | {correct:<6} |")
-    print("+-------+--------+")
+            results.append('N')
+    print("Throw      Correct\n")
+    for idx, correct in enumerate(results, 1):
+        print(f"{idx:<10}{correct}\n")
     print(f"Display % Correct  {correct_count / 8 * 100:.1f}%")
 
 main()
