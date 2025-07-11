@@ -11,19 +11,19 @@ def main():
             2
         ),
         Question(
-            "What is the largest planet in our solar system?",
-            ["Mercury", "Earth", "Mars", "Jupiter", "Neptune"],
-            3
-        ),
-        Question(
-            "Which planet is closest to the Sun?",
-            ["Venus", "Mercury", "Earth", "Mars", "Saturn"],
+            "How far is the Earth from the Sun?",
+            ["10 million miles", "93 million miles", "4.2 light years", "2 AU", "1 inches"],
             1
         ),
         Question(
-            "Which planet has the most moons?",
-            ["Earth", "Mars", "Jupiter", "Saturn", "Neptune"],
-            3
+            "Which planet is the coldest?",
+            ["Uranus", "Mercury", "Earth", "Mars", "Neptune"],
+            0
+        ),
+        Question(
+            "Which planet is the hottest?",
+            ["Earth", "Mars", "Venus", "Saturn", "Neptune"],
+            2
         )
     ]
 
